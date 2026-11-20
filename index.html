@@ -109,7 +109,7 @@ body::before{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;
 .chip.on{background:var(--yellow-soft);border-color:var(--yellow2);color:var(--ink)}
 .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
 .field label{font-size:12.5px;font-weight:700;color:var(--ink2);letter-spacing:.02em}
-.input,select.input,textarea.input{width:100%;padding:11px 13px;border-radius:11px;border:1.5px solid var(--line2);background:var(--paper);color:var(--ink);transition:border-color .15s,box-shadow .15s;font-size:14.5px}
+.input,select.input,textarea.input{width:100%;padding:11px 13px;border-radius:11px;border:1.5px solid var(--line2);background:var(--paper);color:var(--ink);transition:border-color .15s,box-shadow .15s;font-size:16px}
 .input:focus{outline:none;border-color:var(--yellow2);box-shadow:0 0 0 3px rgba(245,168,0,.18)}
 .input::placeholder{color:var(--ink3)}
 .input-wrap{position:relative}
@@ -510,6 +510,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 #task-new-date{max-width:112px}
 .addbar .btn span{display:none}
 .ed-colors{display:none}
+.input,select.input,textarea.input{font-size:16px;transform:scale(.9);transform-origin:left center}
 }
 @media (prefers-reduced-motion:reduce){
 *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
